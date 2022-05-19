@@ -17,13 +17,10 @@ For this dataset, we firstly look into each table and query for basic some infor
 
 We applied the google data studio to produce an analytics tool to visualize the data. It allows us to visualize the data in real-time. If the data were updated, the charts will also be refreshed automatically. It can easily visualize the geographical information based on the longitude and latitude. We generated a interactive map to help people find the business they want. For example, you can specify the category and the rating, then the map will show the locations based on your condition (https://datastudio.google.com/reporting/7a8a9eb5-bdde-4c8b-b015-44ffb0d7b2d1). 
 
-
-# Part 3 NLP
-We use pandas read the review table, then create functions to compute polarity score and generate wordcloud (see code file 'get_review_score'). We used NLP technique to get the sentiment score for each review and average them by business (see code file 'nlp_analysis').
-
 ![1652989128(1)](https://user-images.githubusercontent.com/90291484/169388824-b74395e6-e594-49fd-a2d5-490c67cc911d.png)
 
-Then, we made two bar charts to see the relationship between review, check in counts and stars. It's obvious that the review score is increasing with stars.
+# Part 3 NLP
+We use pandas read the review table, then create functions to compute polarity score and generate wordcloud (see code file 'get_review_score'). We used NLP technique to get the sentiment score for each review and average them by business (see code file 'nlp_analysis'). Then, we made two bar charts to see the relationship between review, check in counts and stars. It's obvious that the review score is increasing with stars.
 
 ![1652989284(1)](https://user-images.githubusercontent.com/90291484/169389246-471b9715-9e34-47bf-91b0-504dd9f97af2.png)
 
