@@ -15,8 +15,11 @@ In order to look into the social network of the users, we also import the datase
 # Part 2 Basic Query and EDA
 For this dataset, we firstly look into each table and query for basic some information (see code file 'query'), then we choose reviews, check_in, and star ratings to represent business reputation. We got those informations from 3 different tables and want to figure out the relationship among them. The scope of this study is all businesses in Massachusetts, so we filtered out businesses from other states. Also, in the reviews table, the reviews are in text format, we need to convert it into numerical format for the following analysis (see code file 'query_business'). 
 
+We applied the google data studio to produce an analytics tool to visualize the data. It allows us to visualize the data in real-time. If the data were updated, the charts will also be refreshed automatically. It can easily visualize the geographical information based on the longitude and latitude. We generated a interactive map to help people find the business they want. For example, you can specify the category and the rating, then the map will show the locations based on your condition (https://datastudio.google.com/reporting/7a8a9eb5-bdde-4c8b-b015-44ffb0d7b2d1). 
+
+
 # Part 3 NLP
-We use pandas read the review table, then create functions to compute polarity score and generate wordcloud (see code file 'get_review_score'). We used NLP technique to get the sentiment score for each review and average them by business (see code file 'nlp_analysis'), and applied the google data studio to produce an analytics tool to visualize the data. It allows us to visualize the data in real-time. If the data were updated, the charts will also be refreshed automatically. It can easily visualize the geographical information based on the longitude and latitude. We generated a interactive map to help people find the business they want. For example, you can specify the category and the rating, then the map will show the locations based on your condition (https://datastudio.google.com/reporting/7a8a9eb5-bdde-4c8b-b015-44ffb0d7b2d1). 
+We use pandas read the review table, then create functions to compute polarity score and generate wordcloud (see code file 'get_review_score'). We used NLP technique to get the sentiment score for each review and average them by business (see code file 'nlp_analysis').
 
 ![1652989128(1)](https://user-images.githubusercontent.com/90291484/169388824-b74395e6-e594-49fd-a2d5-490c67cc911d.png)
 
